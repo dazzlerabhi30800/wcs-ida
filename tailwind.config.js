@@ -63,6 +63,7 @@ export default {
       },
       boxShadow: {
         new: "30px 30px 0 3px #1D2B4F",
+        "new-reverse": "-30px 30px 0 3px #1D2B4F",
       },
       fontFamily: {
         rubik: ["Rubik", "sans-serif"],

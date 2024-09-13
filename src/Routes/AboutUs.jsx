@@ -1,19 +1,26 @@
-import React, { useEffect } from 'react'
-import HeroSection from '../Components/HeroSection'
-import { useGlobalContext } from '../context';
+import React, { useEffect } from "react";
+import HeroSection from "../Components/HeroSection";
+import { useGlobalContext } from "../context";
+import HeroSection2 from "../Components/HeroSection2";
+import AboutUsComp from "../Components/AboutUsComp";
+import Achievements from "../Components/Achievements";
+import OurTeam from "../Components/OurTeam";
 
 const AboutUs = () => {
+  const { updateAboutPage } = useGlobalContext();
 
-  const {updateAboutPage} = useGlobalContext();
-
-  useEffect(() => {updateAboutPage();}, [])
+  useEffect(() => {
+    updateAboutPage();
+  }, []);
 
   return (
-    <div>
-    
-      <HeroSection />
-    </div>
-  )
-}
+    <main>
+      <HeroSection2 />
+      <AboutUsComp />
+      <Achievements />
+      <OurTeam />
+    </main>
+  );
+};
 
-export default AboutUs
+export default AboutUs;

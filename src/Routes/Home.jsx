@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { useGlobalContext } from "../context";
 import HeroSection from "../Components/HeroSection";
-import AboutUs from "../Components/AboutUs";
 import Portfolio from "../Components/Portfolio";
 import WhyChooseUs from "../Components/WhyChooseUs";
 import OurServices from "../Components/OurServices";
 import Testimonials from "../Components/Testimonials";
 import Blogs from "../Components/Blogs";
+import AboutUsComp from "../Components/AboutUsComp";
 
 const Home = () => {
   const { updateHomePage } = useGlobalContext();
@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <main>
       <HeroSection />
-      <AboutUs />
+      <AboutUsComp />
       <Portfolio />
       <WhyChooseUs />
       <OurServices />

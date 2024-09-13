@@ -2,10 +2,12 @@ import React from "react";
 import { fontStyles, styles } from "../style";
 import SectionTitle from "../Styles/SectionTitle";
 import LearnMoreBtn from "../Btns/LearnMoreBtn";
+import { useGlobalContext } from "../context";
 
-const AboutUs = () => {
+const AboutUsComp = () => {
+  const { aboutUs } = useGlobalContext();
   return (
-    <section className="mt-[104px] bg-white">
+    <section className={`${aboutUs?.marginT} bg-white`}>
       <div
         className={`${styles.marginX} ${styles.flexRow} gap-[86px] [&>div]:basis-1/2`}
       >
@@ -15,26 +17,24 @@ const AboutUs = () => {
         ></div>
         {/* Right */}
         <div className={`${styles.flexCol} gap-4`}>
-          <SectionTitle>About Us</SectionTitle>
+          <SectionTitle>{aboutUs?.title}</SectionTitle>
           <h2
             className={`${fontStyles.h2} font-semibold text-blue leading-tight`}
           >
-            Lorem ipsum dolor sit amet consectetur. Nunc.
+            {aboutUs?.heading}
           </h2>
           <p
-            className={`${fontStyles.p1} text-lightBlue font-openSans font-bold mt-2 mb-6`}
+            className={`${fontStyles.p1} text-lightBlue font-openSans ${
+              aboutUs?.bold && "font-bold"
+            } mt-2 mb-6`}
           >
-            Lorem ipsum dolor sit amet consectetur. Enim diam scelerisque enim
-            sit varius sed ultricies pellentesque. In neque a donec maecenas
-            dictum aliquet morbi fringilla. Justo vulputate facilisi cras
-            tincidunt ullamcorper potenti egestas. Eget viverra consectetur
-            pellentesque.
+            {aboutUs?.text}
           </p>
-          <LearnMoreBtn />
+          {aboutUs?.showBtn && <LearnMoreBtn />}
         </div>
       </div>
     </section>
   );
 };
 
-export default AboutUs;
+export default AboutUsComp;
