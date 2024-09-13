@@ -14,7 +14,7 @@ const Footer = () => {
     >
       <div className={`${styles.marginX} ${styles.flexCol}`}>
         <div
-          className={`${styles.flexRow} py-18 px-26 gap-21 bg-gray-300 shadow-md`}
+          className={`${styles.flexRow} py-18 px-26 gap-21 bg-gray-50 shadow-md`}
         >
           <div className={`${styles.flexCol} flex-1 gap-6`}>
             <SectionHeader

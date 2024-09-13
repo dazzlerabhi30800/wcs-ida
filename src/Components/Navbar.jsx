@@ -8,7 +8,7 @@ import ContactUsBtn from "../Btns/ContactUsBtn";
 const Navbar = () => {
   const { pathname } = useLocation();
   return (
-    <nav className="bg-transparent fixed w-full top-0">
+    <nav className="bg-darkBlue z-40 fixed w-full top-0">
       <div
         className={`${styles.flexBetween} ${styles.marginX} text-white py-8`}
       >
