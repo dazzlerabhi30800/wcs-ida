@@ -1,24 +1,16 @@
- const reducer = (state,action) => {
-    
-    //HOME UPDATE
-    if(action.type === "HOME_UPDATE") {
-        return {
-            ...state,
-            name: action.payload.name,
-            image:action.payload.image,
-        }
-    }
+const reducer = (state, action) => {
+  //HOME UPDATE
+  if (action.type === "HOME_UPDATE") {
+    return {
+      ...state,
+      name: action.payload.name,
+      portfolioData: action.payload.portfolioData,
+      whyChooseData: action.payload.whyChooseData,
+      serviceData: action.payload.serviceData,
+    };
+  }
 
-     //ABOUT UPDATE
-     if(action.type === "ABOUT_UPDATE") {
-        return {
-            ...state,
-            name: action.payload.name,
-            image:action.payload.image,
-        }
-    }
-    
-    return state;
- }
+  return state;
+};
 
- export default reducer;
+export default reducer;

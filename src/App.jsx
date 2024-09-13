@@ -1,37 +1,19 @@
-import React from 'react'
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Routes/Home";
+import Navbar from "./Components/Navbar";
 
-import Navbar from './Components/Navbar'
-
-import Home from './Routes/Home'
-import RecruitmentServices from './Routes/RecruitmentServices'
-import HardwareInstallation from './Routes/HardwareInstallation'
-import AboutUs from './Routes/AboutUs'
-import ContactUs from './Routes/ContactUs'
-
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-
-import Footer from './Components/Footer'
-
-
-
-
-const App = () => {
+function App() {
   return (
-    <BrowserRouter>
-    <Navbar/>
-    
-     <Routes>
-       <Route path='/' element={<Home/>}/>
-       <Route path='/recruitment' element={<RecruitmentServices/>}/>
-       <Route path='/hardware' element={<HardwareInstallation/>}/>
-       <Route path='/about' element={<AboutUs/>}/>
-       <Route path='/contact' element={<ContactUs/>}/>
-     </Routes>
-     <Footer/>
-
-    </BrowserRouter> 
-   
-  )
+    <>
+      <Router>
+        <Navbar />
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </Router>
+    </>
+  );
 }
 
-export default App
+export default App;

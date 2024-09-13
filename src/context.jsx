@@ -1,5 +1,6 @@
 import React, { useContext, useReducer } from "react";
 import reducer from "./reducer";
+import { portfolioData, serviceData, whyChooseData } from "./constants";
 
 // create a context (warehouse)
 const AppContext = React.createContext();
@@ -18,25 +19,21 @@ const AppProvider = ({ children }) => {
     return dispatch({
       type: "HOME_UPDATE",
       payload: {
-        name: "HR Consultancy ",
-        image: "./images/rightHeroSection.png",
-      },
-    });
-  };
-
-  //About Page Function
-  const updateAboutPage = () => {
-    return dispatch({
-      type: "ABOUT_UPDATE",
-      payload: {
-        name: "About Us",
-        image: "./images/aboutHeroImg.png",
+        name: "Hero Section",
+        portfolioData,
+        whyChooseData,
+        serviceData,
       },
     });
   };
 
   return (
-    <AppContext.Provider value={{ ...state, updateHomePage, updateAboutPage }}>
+    <AppContext.Provider
+      value={{
+        ...state,
+        updateHomePage,
+      }}
+    >
       {children}
     </AppContext.Provider>
   );
