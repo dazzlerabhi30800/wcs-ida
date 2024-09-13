@@ -1,6 +1,6 @@
 import React, { useContext, useReducer } from "react";
 import reducer from "./reducer";
-import { portfolioData, serviceData, whyChooseData } from "./constants";
+import { blogData, portfolioData, serviceData, whyChooseData } from "./constants";
 
 // create a context (warehouse)
 const AppContext = React.createContext();
@@ -23,6 +23,7 @@ const AppProvider = ({ children }) => {
         portfolioData,
         whyChooseData,
         serviceData,
+        blogData,
       },
     });
   };

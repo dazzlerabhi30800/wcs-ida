@@ -5,6 +5,8 @@ import AboutUs from "../Components/AboutUs";
 import Portfolio from "../Components/Portfolio";
 import WhyChooseUs from "../Components/WhyChooseUs";
 import OurServices from "../Components/OurServices";
+import Testimonials from "../Components/Testimonials";
+import Blogs from "../Components/Blogs";
 
 const Home = () => {
   const { updateHomePage } = useGlobalContext();
@@ -18,6 +20,8 @@ const Home = () => {
       <Portfolio />
       <WhyChooseUs />
       <OurServices />
+      <Testimonials />
+      <Blogs />
     </main>
   );
 };

@@ -94,3 +94,74 @@ export const serviceData = [
     info: "Lorem ipsum dolor sit amet consectetur. Arcu volutpat ac dolor donec arcu ut. Amet id accumsan mi at.",
   },
 ];
+
+export const blogData = [
+  {
+    img: "./images/Random Imgs/img1.jpg",
+    author: "Lorem",
+    comments: 0,
+    title: "Lorem ipsum dolor sit amet consectetur. Sed pharetra.",
+    info: "Lorem ipsum dolor sit amet consectetur. Euismod mauris quis eget amet ornare dolor mollis.",
+  },
+  {
+    img: "./images/Random Imgs/img2.jpg",
+    author: "Lorem",
+    comments: 0,
+    title: "Lorem ipsum dolor sit amet consectetur. Sed pharetra.",
+    info: "Lorem ipsum dolor sit amet consectetur. Euismod mauris quis eget amet ornare dolor mollis.",
+  },
+  {
+    img: "./images/Random Imgs/img3.jpg",
+    author: "Lorem",
+    comments: 0,
+    title: "Lorem ipsum dolor sit amet consectetur. Sed pharetra.",
+    info: "Lorem ipsum dolor sit amet consectetur. Euismod mauris quis eget amet ornare dolor mollis.",
+  },
+];
+
+export const footerLinks = [
+  {
+    id: "home",
+    title: "Home",
+    to: "/",
+  },
+  {
+    id: "about",
+    title: "About",
+    to: "/about",
+  },
+  {
+    id: "service",
+    title: "Service",
+    to: "/service",
+  },
+  {
+    id: "pages",
+    title: "Pages",
+    to: "/pages",
+  },
+  {
+    id: "blog",
+    title: "Blog",
+    to: "/blogs",
+  },
+];
+
+export const footerSocial = [
+  {
+    title: "fb",
+    link: "https://www.facebook.com/",
+  },
+  {
+    title: "ig",
+    link: "https://www.instagram.com/",
+  },
+  {
+    title: "yt",
+    link: "https://www.youtube.com/",
+  },
+  {
+    title: "li",
+    link: "https://www.linkedin.com/",
+  },
+];

@@ -7,6 +7,7 @@ const reducer = (state, action) => {
       portfolioData: action.payload.portfolioData,
       whyChooseData: action.payload.whyChooseData,
       serviceData: action.payload.serviceData,
+      blogData: action.payload.blogData,
     };
   }
 

@@ -31,20 +31,32 @@ export default {
         p2: "10px",
         tp2: "12px",
         dp2: "14px",
-
+      },
+      padding: {
+        18: "72px",
+        26: "104px",
       },
       colors: {
         darkBlue: "#0C1632",
         mediumBlue: "#0F1934",
         blue: "#1D2B4F",
         lightBlue: "#798196",
-        cream: '#E6E6E6',
+        cream: "#E6E6E6",
         grey: "#CCCCCC",
         green: "#0F9E32",
       },
-      spacing: {
-        '30': "120px",
-        '14': "56px",
+      gap: {
+        14: "56px",
+        17: "68px",
+        21: "84px",
+        30: "120px",
+      },
+      width: {
+        18: "72px",
+      },
+      height: {
+        14: "56px",
+        18: "72px",
       },
       backgroundSize: {
         "100%": "100%",
