@@ -64,6 +64,27 @@ const reducer = (state, action) => {
     };
   }
 
+  //PEOPLE DETAIL UPDATE
+  if (action.type === "PEOPLE_UPDATE") {
+    return {
+      ...state,
+      name: action.payload.name,
+      text: action.payload.text,
+      workEnvironmentData: action.payload.workEnvironmentData,
+      teamData: action.payload.teamData,
+    };
+  }
+
+  //BLOG UPDATE
+  if (action.type === "BLOG_UPDATE") {
+    return {
+      ...state,
+      name: action.payload.name,
+      text: action.payload.text,
+      blogData: action.payload.blogData,
+    };
+  }
+
   //HANDLE ACCORDIAN UPDATE
   if (action.type === "ACCORDIAN_UPDATE") {
     const id = action.payload.id;

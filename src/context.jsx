@@ -12,6 +12,8 @@ import { designData, whyChooseData2 } from "./constants/service";
 import { accordianData, workProcessData } from "./constants/serviceDetail";
 import { projectData } from "./constants/projects";
 import { galleryData } from "./constants/projectDetail";
+import { teamData2, workEnvironmentData } from "./constants/people";
+import { blogData2 } from "./constants/blogs";
 
 // create a context (warehouse)
 const AppContext = React.createContext();
@@ -102,6 +104,31 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  //People Page Function
+  const updatePeoplePage = () => {
+    return dispatch({
+      type: "PEOPLE_UPDATE",
+      payload: {
+        name: "Our Innovative People",
+        text: "Lorem ipsum dolor sit amet consectetur. A dictum massa at commodo sit mollis purus. Ut eu etiam interdum hendrerit pretium. Egestas magna consequat ultricies et scelerisque. Adipiscing enim sapien nam sit. Mauris.",
+        workEnvironmentData,
+        teamData: teamData2,
+      },
+    });
+  };
+
+  //Blog Page Function
+  const updateBlogPage = () => {
+    return dispatch({
+      type: "BLOG_UPDATE",
+      payload: {
+        name: "Blog",
+        text: "Lorem ipsum dolor sit amet consectetur. A dictum massa at commodo sit mollis purus. Ut eu etiam interdum hendrerit pretium. Egestas magna consequat ultricies et scelerisque. Adipiscing enim sapien nam sit. Mauris.",
+        blogData: blogData2,
+      },
+    });
+  };
+
   //Handle Accordian Page Function
   const updateAccordian = (id) => {
     return dispatch({
@@ -122,6 +149,8 @@ const AppProvider = ({ children }) => {
         updateServiceDetailPage,
         updateProjectPage,
         updateProjectDetailPage,
+        updatePeoplePage,
+        updateBlogPage,
         updateAccordian,
       }}
     >
