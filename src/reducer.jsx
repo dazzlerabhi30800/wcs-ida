@@ -35,6 +35,32 @@ const reducer = (state, action) => {
     };
   }
 
+  //SERVICE DETAIL UPDATE
+  if (action.type === "SERVICE_DETAIL_UPDATE") {
+    return {
+      ...state,
+      name: action.payload.name,
+      text: action.payload.text,
+      workProcessData: action.payload.workProcessData,
+      accordianData: action.payload.accordianData,
+    };
+  }
+
+  //HANDLE ACCORDIAN UPDATE
+  if (action.type === "ACCORDIAN_UPDATE") {
+    const id = action.payload.id;
+    const newAcc = state.accordianData.map((data) => {
+      if (data.id === id) {
+        return { ...data, open: !data.open };
+      }
+      return { ...data, open: false };
+    });
+    return {
+      ...state,
+      accordianData: newAcc,
+    };
+  }
+
   return state;
 };
 

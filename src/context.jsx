@@ -9,6 +9,7 @@ import {
 } from "./constants";
 import { aboutUs2, achievementData, teamData } from "./constants/about";
 import { designData, whyChooseData2 } from "./constants/service";
+import { accordianData, workProcessData } from "./constants/serviceDetail";
 
 // create a context (warehouse)
 const AppContext = React.createContext();
@@ -64,6 +65,29 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  //Service Detail Page Function
+  const updateServiceDetailPage = () => {
+    return dispatch({
+      type: "SERVICE_DETAIL_UPDATE",
+      payload: {
+        name: "Detail Services",
+        text: "Lorem ipsum dolor sit amet consectetur. A dictum massa at commodo sit mollis purus. Ut eu etiam interdum hendrerit pretium. Egestas magna consequat ultricies et scelerisque. Adipiscing enim sapien nam sit. Mauris.",
+        workProcessData,
+        accordianData,
+      },
+    });
+  };
+
+  //Handle Accordian Page Function
+  const updateAccordian = (id) => {
+    return dispatch({
+      type: "ACCORDIAN_UPDATE",
+      payload: {
+        id,
+      },
+    });
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -71,6 +95,8 @@ const AppProvider = ({ children }) => {
         updateHomePage,
         updateAboutPage,
         updateServicePage,
+        updateServiceDetailPage,
+        updateAccordian,
       }}
     >
       {children}
