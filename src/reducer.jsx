@@ -46,6 +46,16 @@ const reducer = (state, action) => {
     };
   }
 
+  //PROJECT UPDATE
+  if (action.type === "PROJECT_UPDATE") {
+    return {
+      ...state,
+      name: action.payload.name,
+      text: action.payload.text,
+      projectData: action.payload.projectData,
+    };
+  }
+
   //HANDLE ACCORDIAN UPDATE
   if (action.type === "ACCORDIAN_UPDATE") {
     const id = action.payload.id;

@@ -47,3 +47,7 @@ body {
 .portfolioComp:nth-child(5) {
   grid-column: span 4;
 }
+
+.projectComp:nth-child(even) {
+  transform: translateY(40px);
+}
