@@ -12,7 +12,7 @@ const Footer = () => {
   const { pathname } = useLocation();
   return (
     <footer
-      className={`${styles.marginT} ${
+      className={`${
         whitelist.includes(pathname)
           ? "bg-gradient-to-b from-transparent from-35% to-blue to-35%"
           : "bg-blue"

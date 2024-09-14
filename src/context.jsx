@@ -8,6 +8,7 @@ import {
   whyChooseData,
 } from "./constants";
 import { aboutUs2, achievementData, teamData } from "./constants/about";
+import { designData, whyChooseData2 } from "./constants/service";
 
 // create a context (warehouse)
 const AppContext = React.createContext();
@@ -36,7 +37,7 @@ const AppProvider = ({ children }) => {
     });
   };
 
-  //Home Page Function
+  //About Page Function
   const updateAboutPage = () => {
     return dispatch({
       type: "ABOUT_UPDATE",
@@ -50,12 +51,26 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  //Service Page Function
+  const updateServicePage = () => {
+    return dispatch({
+      type: "SERVICE_UPDATE",
+      payload: {
+        name: "Services",
+        text: "Lorem ipsum dolor sit amet consectetur. A dictum massa at commodo sit mollis purus. Ut eu etiam interdum hendrerit pretium. Egestas magna consequat ultricies et scelerisque. Adipiscing enim sapien nam sit. Mauris.",
+        whyChooseData: whyChooseData2,
+        designData,
+      },
+    });
+  };
+
   return (
     <AppContext.Provider
       value={{
         ...state,
         updateHomePage,
         updateAboutPage,
+        updateServicePage,
       }}
     >
       {children}

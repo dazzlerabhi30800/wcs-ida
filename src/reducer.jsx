@@ -24,6 +24,17 @@ const reducer = (state, action) => {
     };
   }
 
+  //SERVICE UPDATE
+  if (action.type === "SERVICE_UPDATE") {
+    return {
+      ...state,
+      name: action.payload.name,
+      text: action.payload.text,
+      whyChooseData: action.payload.whyChooseData,
+      designData: action.payload.designData,
+    };
+  }
+
   return state;
 };
 

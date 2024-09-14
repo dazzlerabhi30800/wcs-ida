@@ -8,7 +8,7 @@ import ViewMoreBtn from "../Btns/ViewMoreBtn";
 const OurTeam = () => {
   const { teamData } = useGlobalContext();
   return (
-    <section className={`${styles.marginT}`}>
+    <section className={`${styles.marginY}`}>
       <div
         className={`${styles.marginX} ${styles.flexCol} items-center gap-10 `}
       >
