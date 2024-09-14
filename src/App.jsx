@@ -7,6 +7,7 @@ import AboutUs from "./Routes/AboutUs";
 import ServicePage from "./Routes/ServicePage";
 import ServiceDetail from "./Routes/ServiceDetail";
 import ProjectPage from "./Routes/ProjectPage";
+import ProjectDetailPage from "./Routes/ProjectDetailPage";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route exact path="/service" element={<ServicePage />} />
           <Route exact path="/serviceDetail" element={<ServiceDetail />} />
           <Route exact path="/projects" element={<ProjectPage />} />
+          <Route exact path="/projectDetail" element={<ProjectDetailPage />} />
         </Routes>
         <Footer />
       </Router>

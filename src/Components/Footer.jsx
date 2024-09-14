@@ -8,7 +8,7 @@ import SocialComp from "../styles/SocialComp";
 import SectionHeader from "../Styles/SectionHeader";
 
 const Footer = () => {
-  const whitelist = ["/", "/serviceDetail"];
+  const whitelist = ["/", "/serviceDetail", "/projectDetail"];
   const { pathname } = useLocation();
   return (
     <footer

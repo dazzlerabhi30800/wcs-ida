@@ -11,6 +11,7 @@ import { aboutUs2, achievementData, teamData } from "./constants/about";
 import { designData, whyChooseData2 } from "./constants/service";
 import { accordianData, workProcessData } from "./constants/serviceDetail";
 import { projectData } from "./constants/projects";
+import { galleryData } from "./constants/projectDetail";
 
 // create a context (warehouse)
 const AppContext = React.createContext();
@@ -91,6 +92,16 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  //Project Page Function
+  const updateProjectDetailPage = () => {
+    return dispatch({
+      type: "PROJECT_DETAIL_UPDATE",
+      payload: {
+        galleryData,
+      },
+    });
+  };
+
   //Handle Accordian Page Function
   const updateAccordian = (id) => {
     return dispatch({
@@ -110,6 +121,7 @@ const AppProvider = ({ children }) => {
         updateServicePage,
         updateServiceDetailPage,
         updateProjectPage,
+        updateProjectDetailPage,
         updateAccordian,
       }}
     >

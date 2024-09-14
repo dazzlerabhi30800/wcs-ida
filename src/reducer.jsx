@@ -56,6 +56,14 @@ const reducer = (state, action) => {
     };
   }
 
+  //PROJECT DETAIL UPDATE
+  if (action.type === "PROJECT_DETAIL_UPDATE") {
+    return {
+      ...state,
+      galleryData: action.payload.galleryData,
+    };
+  }
+
   //HANDLE ACCORDIAN UPDATE
   if (action.type === "ACCORDIAN_UPDATE") {
     const id = action.payload.id;

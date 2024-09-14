@@ -2,9 +2,9 @@ import React from "react";
 import { fontStyles, styles } from "../style";
 import Para1 from "../styles/Para1";
 
-const Testimonials = () => {
+const Testimonials = ({ margin }) => {
   return (
-    <section className={`${styles.marginT} bg-mediumBlue/50`}>
+    <section className={`${margin ? margin : styles.marginT} bg-mediumBlue/50`}>
       <div
         className={`${styles.marginX} ${styles.flexCol} items-center text-white gap-14 py-26`}
       >
