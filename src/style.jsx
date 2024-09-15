@@ -28,8 +28,8 @@ export const styles = {
 
   marginX: "mx-[104px]",
   marginT: "mt-[160px]",
+  
   marginY: "my-[160px]",
-
   gapBetween: "gap-[30px] md:gap-[50px]",
   
   transitionL: "transition linear duration-300"

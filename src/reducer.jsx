@@ -85,6 +85,24 @@ const reducer = (state, action) => {
     };
   }
 
+  //ARTICLE UPDATE
+  if (action.type === "ARTICLE_UPDATE") {
+    return {
+      ...state,
+      articleData: action.payload.articleData,
+    };
+  }
+
+  //CONTACT UPDATE
+  if (action.type === "CONTACT_UPDATE") {
+    return {
+      ...state,
+      name: action.payload.name,
+      text: action.payload.text,
+      contactData: action.payload.contactData,
+    };
+  }
+
   //HANDLE ACCORDIAN UPDATE
   if (action.type === "ACCORDIAN_UPDATE") {
     const id = action.payload.id;

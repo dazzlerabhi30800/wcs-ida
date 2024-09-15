@@ -1,15 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useGlobalContext } from "../context";
+import ContactForm from "../Components/ContactForm";
+import Map from "../Components/Map";
+import HeroSection2 from "../Components/HeroSection2";
 
 const ContactUs = () => {
+  const { updateContactPage } = useGlobalContext();
+  useEffect(() => {
+    updateContactPage();
+  }, []);
   return (
-    <div>
-
-      ContactUs
-      <h1>New Hero Section Branch Ready to Push</h1>
-      <p>Pull Request #2</p>
-      <h1>Contact Us</h1>
-      <p>Pull Request in Hero Section Branch</p>
-    </div>
+    <main>
+      <HeroSection2 />
+      <ContactForm />
+      <Map />
+    </main>
   );
 };
 

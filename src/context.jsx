@@ -14,6 +14,8 @@ import { projectData } from "./constants/projects";
 import { galleryData } from "./constants/projectDetail";
 import { teamData2, workEnvironmentData } from "./constants/people";
 import { blogData2 } from "./constants/blogs";
+import { articleData } from "./constants/articles";
+import { contactData } from "./constants/contact";
 
 // create a context (warehouse)
 const AppContext = React.createContext();
@@ -129,6 +131,28 @@ const AppProvider = ({ children }) => {
     });
   };
 
+  //Article Page Function
+  const updateArticlePage = () => {
+    return dispatch({
+      type: "ARTICLE_UPDATE",
+      payload: {
+        articleData,
+      },
+    });
+  };
+
+  //Contact Page Function
+  const updateContactPage = () => {
+    return dispatch({
+      type: "CONTACT_UPDATE",
+      payload: {
+        name: "Contact Us",
+        text: "Lorem ipsum dolor sit amet consectetur. A dictum massa at commodo sit mollis purus. Ut eu etiam interdum hendrerit pretium. Egestas magna consequat ultricies et scelerisque. Adipiscing enim sapien nam sit. Mauris.",
+        contactData,
+      },
+    });
+  };
+
   //Handle Accordian Page Function
   const updateAccordian = (id) => {
     return dispatch({
@@ -151,6 +175,8 @@ const AppProvider = ({ children }) => {
         updateProjectDetailPage,
         updatePeoplePage,
         updateBlogPage,
+        updateArticlePage,
+        updateContactPage,
         updateAccordian,
       }}
     >

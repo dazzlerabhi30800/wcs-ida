@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="bg-darkBlue z-40 fixed w-full top-0">
       <div
-        className={`${styles.flexBetween} ${styles.marginX} text-white py-8`}
+        className={`${styles.flexBetween} ${styles.marginX} text-white py-6`}
       >
         <h4 className={`${fontStyles.h4} font-bold`}>LoremEpsum</h4>
         <ul
