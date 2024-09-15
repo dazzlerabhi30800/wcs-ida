@@ -1,5 +1,4 @@
-import { FaEnvelope, FaPhone } from "react-icons/fa";
-import { FaMapLocation } from "react-icons/fa6";
+import { FaEnvelope, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 export const contactData = [
   {
@@ -14,7 +13,7 @@ export const contactData = [
         text: "Lorem ipsum dolor sit amet",
       },
       {
-        icon: <FaMapLocation />,
+        icon: <FaMapMarkerAlt />,
         text: "Lorem ipsum dolor sit amet consectetur. Amet vitae libero.",
       },
     ],
@@ -31,7 +30,7 @@ export const contactData = [
         text: "Lorem ipsum dolor sit amet",
       },
       {
-        icon: <FaMapLocation />,
+        icon: <FaMapMarkerAlt />,
         text: "Lorem ipsum dolor sit amet consectetur. Amet vitae libero.",
       },
     ],

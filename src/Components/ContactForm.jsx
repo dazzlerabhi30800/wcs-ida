@@ -25,7 +25,7 @@ const ContactForm = () => {
             lectus porttitor tristique commodo vestibulum ullamcorper. Arcu a
             sed arcu augue.
           </Para1>
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-[9px]">
             {contactData?.map(({ title, info }, index) => (
               <div key={index} className={`${styles.flexCol} gap-4`}>
                 <h4 className={`${fontStyles.h4} font-bold font-notoSans`}>
@@ -33,7 +33,7 @@ const ContactForm = () => {
                 </h4>
                 {info?.map(({ icon, text }, index) => (
                   <div key={index} className={`${styles.flexRow} gap-4`}>
-                    <span>{icon}</span>
+                    <span className="text-xl">{icon}</span>
                     <Para1 fontWeight="font-normal" color="text-inherit">
                       {text}
                     </Para1>
