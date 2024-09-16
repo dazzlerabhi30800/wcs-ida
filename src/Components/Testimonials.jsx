@@ -6,7 +6,7 @@ const Testimonials = ({ margin }) => {
   return (
     <section className={`${margin ? margin : styles.marginT} bg-mediumBlue/50`}>
       <div
-        className={`${styles.marginX} ${styles.flexCol} items-center text-white gap-14 py-26`}
+        className={`${styles.marginX} ${styles.flexCol} items-center text-white gap-10 md:gap-14 py-16 md:py-20 lg:py-26`}
       >
         <h2 className={`${fontStyles.h2} font-semibold`}>
           What Our client Saying?
@@ -21,9 +21,9 @@ const Testimonials = ({ margin }) => {
             aliquam blandit sed. Elementum nulla eu dignissim netus et odio
             laoreet.
           </Para1>
-          <div className={`${styles.flexRow} gap-4`}>
-            <div className="w-18 h-18 bg-cream rounded-[50%]"></div>
-            <div className={`${styles.flexCol} gap-2`}>
+          <div className={`${styles.flexRow} gap-2 md:gap-4`}>
+            <div className="w-14 h-14 md:w-18 md:h-18 bg-cream rounded-[50%]"></div>
+            <div className={`${styles.flexCol} gap-1 md:gap-2`}>
               <p className={`${fontStyles.p1}`}>Lorem ipsum</p>
               <p className={`${fontStyles.p2} font-bold`}>Lorem ipsum</p>
             </div>

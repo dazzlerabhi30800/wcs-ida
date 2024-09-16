@@ -8,7 +8,7 @@ const BlogComp = ({ data: { img, author, comment, title, info } }) => {
     <div className={`${styles.flexCol}`}>
       <img
         src={img}
-        className="w-full h-[267px] object-cover rounded-lg"
+        className="w-full h-[267px] sm:h-[200px] md:h-[267px] object-cover rounded-lg"
         alt={title}
       />
       <div className={`${styles.flexCol} gap-4 pt-4`}>

@@ -21,9 +21,9 @@ const Footer = () => {
       <div className={`${styles.marginX} ${styles.flexCol}`}>
         {whitelist.includes(pathname) && (
           <div
-            className={`${styles.flexRow} py-18 px-26 gap-21 bg-gray-50 shadow-md`}
+            className={`${styles.flexResponsiveLarge} items-center p-5 md:p-10  xl:py-18 xl:px-26 gap-10 md:gap-12 lg:gap-21 bg-gray-50 shadow-md`}
           >
-            <div className={`${styles.flexCol} flex-1 gap-6`}>
+            <div className={`${styles.flexCol} flex-1 gap-4 md:gap-6`}>
               <SectionHeader
                 title="Subscribe Now"
                 heading="Join Newsletter"
@@ -36,11 +36,11 @@ const Footer = () => {
             </div>
             <form
               onSubmit={(e) => e.preventDefault()}
-              className={`${fontStyles.p1} ${styles.flexRow} basis-[45%] gap-2 w-full`}
+              className={`${fontStyles.p1} ${styles.flexRow} md:basis-[45%] gap-2 w-full`}
             >
               <input
                 type="email"
-                className="border h-14 px-6 border-cream placeholder:text-cream focus:border-blue text-blue rounded-lg focus:outline-none flex-1"
+                className="border w-full h-10 md:h-14 px-3 px-4 lg:px-6 border-cream placeholder:text-cream focus:border-blue text-blue rounded-lg focus:outline-none"
                 placeholder="Enter your mail"
               />
               <SubscribeNowBtn />
@@ -48,11 +48,11 @@ const Footer = () => {
           </div>
         )}
         <div
-          className={`${styles.flexCol} text-white items-center gap-10 mt-20 mb-14`}
+          className={`${styles.flexCol} text-white items-center gap-10 mt-16 md:mt-20 mb-14`}
         >
           <h4 className={`${fontStyles.h4} font-bold`}>LoremEpsum</h4>
           <ul
-            className={`${styles.flexRow} ${fontStyles.p1} text-cream font-openSans font-bold gap-10`}
+            className={`${styles.flexRow} ${fontStyles.p1} text-cream font-openSans font-bold gap-4 md:gap-10`}
           >
             {footerLinks?.map((nav) => (
               <li key={nav.id} className="hover:text-white">
@@ -67,7 +67,7 @@ const Footer = () => {
           </div>
         </div>
         {/* Last Part */}
-        <div className={`${styles.flexBetween} border-t border-cream py-6`}>
+        <div className={`${styles.flexBetween} flex-wrap gap-4 md:gap-0 border-t border-cream py-6`}>
           <Para1 fontWeight="font-normal" color="text-white">
             Privacy Policy
           </Para1>

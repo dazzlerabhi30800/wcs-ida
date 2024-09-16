@@ -5,7 +5,7 @@ import Para1 from "./Para1";
 const ServiceComp = ({ data: { icon, title, info } }) => {
   return (
     <div
-      className={`${styles.flexCol} items-center text-center gap-6 p-10 bg-white border border-mediumBlue/40 rounded-lg group transition-all hover:border-transparent hover:bg-mediumBlue/50 shadow-md`}
+      className={`${styles.flexCol} justify-between items-center text-center gap-6 p-8 sm:p-5 md:p-10 bg-white border border-mediumBlue/40 rounded-lg group transition-all hover:border-transparent hover:bg-mediumBlue/50 shadow-md`}
     >
       <span className="text-green group-hover:text-white text-4xl">{icon}</span>
       <h3

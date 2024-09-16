@@ -20,8 +20,8 @@ export default {
         th3: "25px",
         dh3: "32px",
 
-        h4: "18px",
-        th4: "24px",
+        h4: "16px",
+        th4: "20px",
         dh4: "24px",
 
         p1: "12px",

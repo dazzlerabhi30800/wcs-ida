@@ -26,11 +26,13 @@ export const styles = {
   paddingB: "pb-10 md:py-12 lg:py-20",
   padding: "px-[25px] sm:px-[35px] md:px-[52px] lg:px-[72px]",
 
-  marginX: "mx-[104px]",
-  marginT: "mt-[160px]",
+  marginX: "mx-[30px] sm:mx-[50px] md:mx-[70px] lg:mx-[104px]",
+  marginT: "mt-[70px] md:mt-[120px] lg:mt-[160px]",
   
-  marginY: "my-[160px]",
+  marginY: "my-[70px] md:my-[120px]  lg:my-[160px]",
   gapBetween: "gap-[30px] md:gap-[50px]",
+
+  shadow: "shadow-[10px_10px_0_2px_#1D2B4F] sm:shadow-[15px_15px_0_3px_#1D2B4F] md:shadow-[30px_30px_0_3px_#1D2B4F]",
   
   transitionL: "transition linear duration-300"
 };

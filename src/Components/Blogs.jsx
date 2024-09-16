@@ -14,7 +14,7 @@ const Blogs = () => {
           <SectionHeader title="Our Blog" heading="Get A News" />
           <ViewMoreBtn />
         </div>
-        <div className="flex gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-y-8 md:gap-y-0 sm:gap-4">
           {blogData?.map((data, index) => (
             <BlogComp data={data} key={index} />
           ))}

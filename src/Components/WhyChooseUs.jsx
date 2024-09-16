@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
     <section className={`${styles.marginT}`}>
       <div className={`${styles.marginX} ${styles.flexCol} gap-14`}>
         <SectionHeader title="Our Featured" heading="Why Choose Us" align="center" />
-        <div className="flex h-[536px]">
+        <div className="flex flex-wrap min-h-[350px] md:h-[420px] lg:h-[536px]">
           {whyChooseData?.map((data, index) => (
             <WhyChooseComp data={data} key={index} />
           ))}

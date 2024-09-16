@@ -1,5 +1,5 @@
 export const aboutUs2 = {
-  marginT: "mt-[120px]",
+  marginT: "mt-[40px] md:mt-[120px] lg:mt-[160px]",
   title: "About Us",
   heading: "Lorem ipsum dolor sit amet consectetur.",
   text: "Lorem ipsum dolor sit amet consectetur. Odio amet tristique arcu sed quam. Eu magna imperdiet aliquam pellentesque id tristique. Sed accumsan etiam varius imperdiet. Phasellus elit dui vel sed lectus a vulputate. Orci sit augue commodo dolor ullamcorper consectetur. Ac bibendum lobortis purus at orci dapibus hendrerit. Massa nisl diam magna habitant. Tincidunt ullamcorper donec porttitor tortor. Fermentum fermentum pellentesque amet dolor commodo velit turpis porttitor. Enim aliquam consectetur tristique id sed ut ut. Condimentum lectus mauris at urna quis euismod arcu vel non. Aliquet lectus adipiscing duis adipiscing rutrum tempus placerat fringilla.",
