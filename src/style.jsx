@@ -33,6 +33,7 @@ export const styles = {
   gapBetween: "gap-[30px] md:gap-[50px]",
 
   shadow: "shadow-[10px_10px_0_2px_#1D2B4F] sm:shadow-[15px_15px_0_3px_#1D2B4F] md:shadow-[30px_30px_0_3px_#1D2B4F]",
+  shadowReverse: "shadow-[-10px_10px_0_2px_#1D2B4F] sm:shadow-[-15px_15px_0_3px_#1D2B4F] md:shadow-[-30px_30px_0_3px_#1D2B4F]",
   
   transitionL: "transition linear duration-300"
 };

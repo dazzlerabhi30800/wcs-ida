@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import HeroSection from "../Components/HeroSection";
 import { useGlobalContext } from "../context";
 import HeroSection2 from "../Components/HeroSection2";
 import AboutUsComp from "../Components/AboutUsComp";

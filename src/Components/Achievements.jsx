@@ -10,10 +10,10 @@ const Achievements = () => {
   return (
     <section className={`${styles.marginT}`}>
       <div
-        className={`${styles.marginX} ${styles.flexRow} [&>div]:basis-1/2 gap-[86px]`}
+        className={`${styles.marginX} ${styles.flexResponsiveLarge} lg:items-center gap-16 md:gap-[86px]`}
       >
         {/* Left */}
-        <div className={`${styles.flexCol} gap-10`}>
+        <div className={`${styles.flexCol} gap-10 lg:basis-1/2`}>
           <div className={`${styles.flexCol} gap-6`}>
             <SectionHeader
               title="Our Achievement"
@@ -26,7 +26,7 @@ const Achievements = () => {
             </Para1>
           </div>
           {/* Achievements Wrapper */}
-          <div className="flex gap-4">
+          <div className="flex gap-2 sm:gap-4">
             {achievementData?.map((data, index) => (
               <AchievementComp data={data} key={index} />
             ))}
@@ -34,7 +34,7 @@ const Achievements = () => {
         </div>
         {/* Right */}
         <div
-          className={`bg-cream w-full h-[642px] rounded-lg shadow-new-reverse`}
+          className={`${styles.shadowReverse} bg-cream lg:flex-1 w-full h-[350px] sm:h-[400px] md:h-[550px] xl:h-[642px] rounded-lg`}
         ></div>
       </div>
     </section>
