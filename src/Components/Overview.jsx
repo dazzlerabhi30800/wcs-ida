@@ -4,11 +4,13 @@ import Para1 from "../styles/Para1";
 
 const Overview = () => {
   return (
-    <section className={`mt-[120px]`}>
+    <section className={`mt-[40px] md:mt-[80px] lg:mt-[120px]`}>
       <div
-        className={`${styles.marginX} ${styles.flexRow} [&>div]:basis-1/2 gap-[86px]`}
+        className={`${styles.marginX} ${styles.flexResponsiveLarge} lg:items-center gap-12 sm:gap-16 lg:[&>div]:basis-1/2 xl:gap-[86px]`}
       >
-        <div className="w-full h-[672px] rounded-lg shadow-new">
+        <div
+          className={`${styles.imgDimension} ${styles.shadow} w-full  rounded-lg`}
+        >
           <img
             src="./images/Random Imgs/img1.jpg"
             className="w-full h-full object-cover rounded-lg"

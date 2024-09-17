@@ -5,7 +5,7 @@ import Para1 from "./Para1";
 const ProcessComp = ({ data: { id, title, text } }) => {
   return (
     <div
-      className={`${styles.flexCol} items-center text-center p-8 border border-mediumBlue/20 rounded-lg group transition-all hover:bg-mediumBlue/50 gap-6 hover:shadow-md`}
+      className={`${styles.flexCol} items-center text-center p-7 sm:p-6 md:p-8 border border-mediumBlue/20 rounded-lg group transition-all hover:bg-mediumBlue/50 gap-6 hover:shadow-md`}
     >
       <div className={`${styles.flexCol} items-center `}>
         <h1

@@ -1,5 +1,5 @@
 import React from "react";
-import { fontStyles, styles } from "../style";
+import {  styles } from "../style";
 import SectionHeader from "../Styles/SectionHeader";
 import Para1 from "../styles/Para1";
 import { useGlobalContext } from "../context";
@@ -9,7 +9,7 @@ const Faq = () => {
   const { accordianData } = useGlobalContext();
   return (
     <section className={`${styles.marginY}`}>
-      <div className={`${styles.marginX} flex [&>div]:basis-1/2 gap-[86px]`}>
+      <div className={`${styles.marginX} ${styles.flexResponsiveLarge} lg:items-center lg:[&>div]:basis-1/2 gap-12 md:gap-16 lg:gap-[86px]`}>
         <div className={`${styles.flexCol} gap-6`}>
           <div className={`${styles.flexCol} gap-6`}>
             <SectionHeader title="FAQs" heading="What They Ask" />
@@ -25,7 +25,7 @@ const Faq = () => {
             ))}
           </div>
         </div>
-        <div className="w-full h-[672px] shadow-new-reverse bg-cream rounded-lg"></div>
+        <div className={`${styles.imgDimension2} ${styles.shadowReverse} w-full bg-cream rounded-lg` }></div>
       </div>
     </section>
   );

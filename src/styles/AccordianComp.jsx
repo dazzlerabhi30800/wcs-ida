@@ -11,10 +11,10 @@ const AccordianComp = ({ data: { id, question, answer, open } }) => {
       <div
         className={`${styles.flexBetween} ${
           open ? "bg-orange-500 text-white" : "bg-orange-200 text-blue"
-        }  w-full rounded-lg p-4 `}
+        }  w-full rounded-lg p-3 md:p-4 `}
       >
         <p className={`${fontStyles.p1} font-bold`}>{question}</p>
-        <button onClick={() => updateAccordian(id)} className="text-xl">
+        <button onClick={() => updateAccordian(id)} className="text-base md:text-xl">
           {open ? <FaChevronDown /> : <FaChevronUp />}
         </button>
       </div>

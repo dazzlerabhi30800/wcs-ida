@@ -35,7 +35,10 @@ export const styles = {
   shadow: "shadow-[10px_10px_0_2px_#1D2B4F] sm:shadow-[15px_15px_0_3px_#1D2B4F] md:shadow-[30px_30px_0_3px_#1D2B4F]",
   shadowReverse: "shadow-[-10px_10px_0_2px_#1D2B4F] sm:shadow-[-15px_15px_0_3px_#1D2B4F] md:shadow-[-30px_30px_0_3px_#1D2B4F]",
   
-  transitionL: "transition linear duration-300"
+  transitionL: "transition linear duration-300",
+
+  imgDimension: "h-[350px] sm:h-[400px] md:h-[500px] xl:h-[642px]",
+  imgDimension2: "h-[350px] sm:h-[400px] md:h-[500px] lg:h-[570px] xl:h-[642px]",
 };
 
 export const dimensionStyles = {

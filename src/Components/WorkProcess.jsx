@@ -21,7 +21,7 @@ const WorkProcess = () => {
             cras ultrices ullamcorper fermentum viverra et.
           </Para1>
         </div>
-        <div className="grid grid-cols-3 gap-x-4 gap-y-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-4 sm:gap-x-3 lg:gap-x-4 gap-y-6 sm:gap-y-4 lg:gap-y-6">
           {workProcessData?.map((data, index) => (
             <ProcessComp data={data} key={index} />
           ))}

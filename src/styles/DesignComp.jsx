@@ -13,7 +13,7 @@ const DesignComp = ({ data: { img, title, info }, order }) => {
       <div
         className={`${
           order % 2 === 0 ? `${styles.shadow}` : `${styles.shadowReverse}`
-        } w-full h-[350px] sm:h-[400px] md:h-[500px] xl:h-[642px] rounded-lg `}
+        } w-full ${styles.imgDimension} rounded-lg `}
       >
         <img
           src={img}
