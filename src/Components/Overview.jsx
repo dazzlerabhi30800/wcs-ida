@@ -4,7 +4,7 @@ import Para1 from "../styles/Para1";
 
 const Overview = () => {
   return (
-    <section className={`mt-[40px] md:mt-[80px] lg:mt-[120px]`}>
+    <section className={`${styles.marginT2}`}>
       <div
         className={`${styles.marginX} ${styles.flexResponsiveLarge} lg:items-center gap-12 sm:gap-16 lg:[&>div]:basis-1/2 xl:gap-[86px]`}
       >

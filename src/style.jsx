@@ -28,6 +28,7 @@ export const styles = {
 
   marginX: "mx-[30px] sm:mx-[50px] md:mx-[70px] lg:mx-[104px]",
   marginT: "mt-[70px] md:mt-[120px] lg:mt-[160px]",
+  marginT2: "mt-[40px] md:mt-[80px] lg:mt-[120px]",
   
   marginY: "my-[70px] md:my-[120px]  lg:my-[160px]",
   gapBetween: "gap-[30px] md:gap-[50px]",
