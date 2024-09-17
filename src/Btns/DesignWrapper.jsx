@@ -7,7 +7,7 @@ const DesignWrapper = () => {
   const { designData } = useGlobalContext();
   return (
     <section className={`${styles.marginT}`}>
-      <div className={`${styles.marginX} ${styles.flexCol} gap-40`}>
+      <div className={`${styles.marginX} ${styles.flexCol} gap-20 lg:gap-40`}>
         {designData?.map((data, index) => (
           <DesignComp data={data} order={index + 1} />
         ))}

@@ -6,14 +6,14 @@ import LearnMoreBtn from "../Btns/LearnMoreBtn";
 const DesignComp = ({ data: { img, title, info }, order }) => {
   return (
     <div
-      className={`${styles.flexRow} ${
-        order % 2 === 0 && "flex-row-reverse"
-      } gap-[86px] [&>div]:basis-1/2`}
+      className={`${styles.flexResponsiveLarge} lg:items-center ${
+        order % 2 === 0 && "lg:flex-row-reverse"
+      } gap-16 xl:gap-[86px] lg:[&>div]:basis-1/2`}
     >
       <div
         className={`${
-          order % 2 === 0 ? "shadow-new" : "shadow-new-reverse"
-        } w-full h-[672px] rounded-lg `}
+          order % 2 === 0 ? `${styles.shadow}` : `${styles.shadowReverse}`
+        } w-full h-[350px] sm:h-[400px] md:h-[500px] xl:h-[642px] rounded-lg `}
       >
         <img
           src={img}
