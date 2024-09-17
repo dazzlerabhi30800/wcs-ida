@@ -24,7 +24,6 @@ body {
   min-height: 100vh;
 }
 
-
 .portfolioComp:nth-child(1) {
   grid-column: span 5;
 }
@@ -45,15 +44,16 @@ body {
   grid-column: span 4;
 }
 
-.projectComp:nth-child(even) {
-  transform: translateY(40px);
-}
-
 .galleryComp:nth-child(1) {
   grid-column: span 2;
   grid-row: span 2;
 }
 
+@media Screen and (width >= 760px) {
+  .projectComp:nth-child(even) {
+    transform: translateY(40px);
+  }
+}
 @media Screen and (width >= 1040px) {
   .right-hero {
     clip-path: polygon(26% 0, 100% 0%, 100% 100%, 0 100%);

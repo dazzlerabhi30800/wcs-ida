@@ -7,10 +7,10 @@ const ProjectComp = ({ data: { img, title, heading, info } }) => {
   return (
     <div
       style={{ backgroundImage: `url("${img}")` }}
-      className="projectComp group flex items-end p-10 bg-center bg-cover bg-no-repeat w-full h-[721px] rounded-lg overflow-hidden relative after:absolute after:content-[''] after:w-full after:top-0 after:left-0 after:h-full after:bg-transparent transition-all hover:after:bg-black/40"
+      className="projectComp group flex items-end p-10 bg-center bg-cover bg-no-repeat w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[721px] rounded-lg overflow-hidden relative after:absolute after:content-[''] after:w-full after:top-0 after:left-0 after:h-full after:bg-black/30 md:after:bg-transparent transition-all md:hover:after:bg-black/40"
     >
       <div
-        className={`${styles.flexCol} ${styles.transitionL} gap-6 text-white relative z-40 translate-y-[600px] group-hover:-translate-y-0`}
+        className={`${styles.flexCol} ${styles.transitionL} gap-6 text-white relative z-40 translate-y-0 md:translate-y-[600px] md:group-hover:-translate-y-0`}
       >
         <div className={`${styles.flexCol} gap-4`}>
           <span
