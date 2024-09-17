@@ -30,7 +30,7 @@ export const styles = {
   marginT: "mt-[70px] md:mt-[120px] lg:mt-[160px]",
   marginT2: "mt-[40px] md:mt-[80px] lg:mt-[120px]",
   
-  marginY: "my-[70px] md:my-[120px]  lg:my-[160px]",
+  marginY: "my-[70px] md:my-[120px] lg:my-[160px]",
   gapBetween: "gap-[30px] md:gap-[50px]",
 
   shadow: "shadow-[10px_10px_0_2px_#1D2B4F] sm:shadow-[15px_15px_0_3px_#1D2B4F] md:shadow-[30px_30px_0_3px_#1D2B4F]",

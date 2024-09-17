@@ -6,13 +6,13 @@ import { useGlobalContext } from "../context";
 const ArticleDetail = () => {
   const { articleData } = useGlobalContext();
   return (
-    <section className={`my-40`}>
-      <div className={`${styles.marginX} flex gap-4`}>
+    <section className={`${styles.marginY}`}>
+      <div className={`${styles.marginX} ${styles.flexResponsive} gap-4`}>
         {/* Left */}
-        <div className={`${styles.flexCol} gap-6 basis-[70%] w-full`}>
+        <div className={`${styles.flexCol} gap-6 md:basis-[60%] lg:basis-[70%] w-full`}>
           <img
             src="./images/Random Imgs/img1.jpg"
-            className="w-full h-[512px] rounded-lg object-cover"
+            className="w-full h-[320px] md:h-[420px] lg:h-[512px] rounded-lg object-cover"
             alt=""
           />
           <h2 className={`${fontStyles.h2} font-bold text-blue`}>
@@ -48,7 +48,7 @@ const ArticleDetail = () => {
           </Para1>
           <img
             src="./images/Random Imgs/img2.jpg"
-            className="w-full rounded-lg h-[450px] object-cover"
+            className="w-full rounded-lg h-[300px] md:h-[380px] lg:h-[450px] object-cover"
             alt=""
           />
           <Para1 fontWeight="font-normal" style="!max-w-full">
@@ -76,7 +76,7 @@ const ArticleDetail = () => {
             <div key={index} className={`${styles.flexCol}`}>
               <img
                 src={img}
-                className="w-full h-[267px] object-cover rounded-lg"
+                className="w-full h-[240px] md:h-[220px] lg:h-[267px] object-cover rounded-lg"
                 alt={title}
               />
               <div className={`${styles.flexCol} gap-4 mt-4`}>
