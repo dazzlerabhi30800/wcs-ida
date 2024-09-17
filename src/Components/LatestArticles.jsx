@@ -14,7 +14,7 @@ const LatestArticles = () => {
         <h2 className={`${fontStyles.h2} font-bold text-blue`}>
           Latest Articles
         </h2>
-        <div className="grid grid-cols-3 mt-4 w-full gap-x-4 gap-y-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-8 sm:gap-4 sm:gap-y-8 lg:gap-y-14 xl:gap-x-8">
           {blogData?.map((data, index) => (
             <BlogComp data={data} key={index} />
           ))}
