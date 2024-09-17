@@ -8,11 +8,13 @@ import SendMessageBtn from "../Btns/SendMessageBtn";
 const ContactForm = () => {
   const { contactData } = useGlobalContext();
   return (
-    <section className={`mt-[120px]`}>
-      <div className={`${styles.marginX} flex`}>
+    <section className={`${styles.marginT2}`}>
+      <div
+        className={`${styles.marginX} ${styles.flexResponsiveLarge} gap-10 lg:gap-0`}
+      >
         {/* Left */}
         <div
-          className={`${styles.flexCol} text-white p-8 bg-blue justify-center basis-1/2 gap-6 rounded-l-lg`}
+          className={`${styles.flexCol} text-white p-5 md:p-6 lg:p-8 bg-blue justify-center lg:basis-1/2 gap-6 rounded-lg lg:rounded-none lg:rounded-l-lg`}
         >
           <div className={`${styles.flexCol} gap-4`}>
             <SectionTitle>Contact Us</SectionTitle>
@@ -25,7 +27,7 @@ const ContactForm = () => {
             lectus porttitor tristique commodo vestibulum ullamcorper. Arcu a
             sed arcu augue.
           </Para1>
-          <div className="grid grid-cols-2 gap-[9px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-[9px]">
             {contactData?.map(({ title, info }, index) => (
               <div key={index} className={`${styles.flexCol} gap-4`}>
                 <h4 className={`${fontStyles.h4} font-bold font-notoSans`}>
@@ -33,7 +35,7 @@ const ContactForm = () => {
                 </h4>
                 {info?.map(({ icon, text }, index) => (
                   <div key={index} className={`${styles.flexRow} gap-4`}>
-                    <span className="text-xl">{icon}</span>
+                    <span className="text-base sm:text-lg md:text-xl">{icon}</span>
                     <Para1 fontWeight="font-normal" color="text-inherit">
                       {text}
                     </Para1>
@@ -46,7 +48,7 @@ const ContactForm = () => {
         {/* Right */}
         <form
           onSubmit={(e) => e.preventDefault()}
-          className={`${styles.flexCol}  ${fontStyles.p2} [&_input]:rounded-lg [&_textarea]:rounded-lg gap-6 flex-1 w-full py-[52px] px-6 border border-cream rounded-r-lg`}
+          className={`${styles.flexCol}  ${fontStyles.p2} [&_input]:rounded-lg [&_textarea]:rounded-lg gap-6 flex-1 w-full py-8 md:py-10 lg:py-[52px] px-6 border border-cream rounded-lg lg:rounded-none lg:rounded-r-lg`}
         >
           <div className={`${styles.flexCol} gap-2 text-blue`}>
             <p>First Name</p>
