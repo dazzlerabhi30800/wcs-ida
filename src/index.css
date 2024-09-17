@@ -44,14 +44,13 @@ body {
   grid-column: span 4;
 }
 
-.galleryComp:nth-child(1) {
-  grid-column: span 2;
-  grid-row: span 2;
-}
-
 @media Screen and (width >= 760px) {
   .projectComp:nth-child(even) {
     transform: translateY(40px);
+  }
+  .galleryComp:nth-child(1) {
+    grid-column: span 2;
+    grid-row: span 2;
   }
 }
 @media Screen and (width >= 1040px) {
