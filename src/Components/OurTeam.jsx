@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "../style";
-import SectionHeader from "../Styles/SectionHeader";
+import SectionHeader from "../styles/SectionHeader";
 import { useGlobalContext } from "../context";
 import TeamComp from "../styles/TeamComp";
 import ViewMoreBtn from "../Btns/ViewMoreBtn";

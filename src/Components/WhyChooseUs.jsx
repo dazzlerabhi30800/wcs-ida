@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "../style";
-import SectionHeader from "../Styles/SectionHeader";
+import SectionHeader from "../styles/SectionHeader";
 import { useGlobalContext } from "../context";
 import WhyChooseComp from "../Styles/WhyChooseComp";
 

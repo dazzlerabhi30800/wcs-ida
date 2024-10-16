@@ -1,9 +1,9 @@
 import React from "react";
 import { styles } from "../style";
-import SectionHeader from "../Styles/SectionHeader";
 import Para1 from "../styles/Para1";
 import { useGlobalContext } from "../context";
 import ProcessComp from "../styles/ProcessComp";
+import SectionHeader from "../styles/SectionHeader";
 
 const WorkProcess = () => {
   const { workProcessData } = useGlobalContext();

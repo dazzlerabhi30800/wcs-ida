@@ -1,6 +1,6 @@
 import React from "react";
 import {  styles } from "../style";
-import SectionHeader from "../Styles/SectionHeader";
+import SectionHeader from "../styles/SectionHeader";
 import Para1 from "../styles/Para1";
 import { useGlobalContext } from "../context";
 import AccordianComp from "../styles/AccordianComp";

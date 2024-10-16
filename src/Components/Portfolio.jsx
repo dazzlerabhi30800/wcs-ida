@@ -1,7 +1,7 @@
 import React from "react";
 import { fontStyles, styles } from "../style";
 import { useGlobalContext } from "../context";
-import SectionHeader from "../Styles/SectionHeader";
+import SectionHeader from "../styles/SectionHeader";
 
 const Portfolio = () => {
   const { portfolioData } = useGlobalContext();

@@ -1,9 +1,9 @@
 import React from "react";
 import { styles } from "../style";
-import SectionHeader from "../Styles/SectionHeader";
 import Para1 from "../styles/Para1";
 import { useGlobalContext } from "../context";
 import AchievementComp from "../styles/AchievementComp";
+import SectionHeader from "../styles/SectionHeader";
 
 const Achievements = () => {
   const { achievementData } = useGlobalContext();
