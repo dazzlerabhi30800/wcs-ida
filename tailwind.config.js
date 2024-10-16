@@ -3,9 +3,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        "video-img": "url('./images/Random Imgs/img1.jpg')",
-        "hero-img": "url('./images/placeholder.png')",
-        "error-img": "url('./images/Random Imgs/error-bg.jpg')",
+        "video-img": "url('/images/Random Imgs/img1.jpg')",
+        "hero-img": "url('/images/placeholder.png')",
+        "error-img": "url('/images/Random Imgs/error-bg.jpg')",
       },
       fontSize: {
         h1: "30px",

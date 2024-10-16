@@ -24,7 +24,7 @@ export const navLinks = [
   {
     id: "pages",
     title: "Pages",
-    to: "/pages",
+    to: "/",
     dropdown: [],
   },
   {
