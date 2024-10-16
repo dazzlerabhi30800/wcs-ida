@@ -5,7 +5,7 @@ import SubscribeNowBtn from "../Btns/SubscribeNowBtn";
 import { footerLinks, footerSocial } from "../constants";
 import { NavLink, useLocation } from "react-router-dom";
 import SocialComp from "../styles/SocialComp";
-import SectionHeader from "../Styles/SectionHeader";
+import SectionHeader from "../styles/SectionHeader";
 
 const Footer = () => {
   const whitelist = ["/", "/serviceDetail", "/projectDetail", "/blogs"];
